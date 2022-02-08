@@ -1,0 +1,94 @@
+header.header {
+    width: 100%;
+    height: 44px;
+    border-bottom: solid 1px #ca2100;
+    background-color: #db4c3f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    z-index: 400;
+}
+
+header.header nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 922px;
+    margin: auto;
+    height: 44px;
+}
+
+header nav div.logo {
+    padding-left: 8px;
+    grid-area: 1 / 1;
+}
+
+header nav div.logo img {
+    width: 24px;
+}
+
+header nav div.settings {
+    grid-area: 1 / 2;
+    text-align: right;
+}
+
+header nav div.settings ul {
+    float: right;
+}
+
+header nav div.settings {
+    grid-area: 1 / 2;
+    text-align: right;
+}
+
+header nav div.settings ul {
+    float: right;
+}
+
+header nav div.settings ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+
+header nav div.settings ul li:hover {
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header nav div.settings ul li.settings__add {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+header nav div.settings ul li.settings__add button {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+header nav div.settings ul li.settings__darkmode button {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    display: flex;
+}
+
+header nav div.settings ul li.settings__darkmode button svg {
+    width: 20px;
+    height: 20px;
+}
+

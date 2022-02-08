@@ -1,0 +1,144 @@
+.sidebar {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    height: calc(100vh);
+    width: 266px;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-right: 1px solid #f1f1f1;
+    background-color: #fafafa;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.sidebar li:hover .sidebar__project-delete {
+    display: flex;
+}
+
+.sidebar__project {
+    cursor: pointer;
+}
+
+.sidebar__project div:nth-child(1) {
+    padding: 5px 0;
+    padding-left: 10px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__project-delete {
+    margin-left: auto;
+    display: none;
+}
+
+.sidebar__project-delete svg {
+    color: #cacaca;
+}
+
+.sidebar__project.active, .sidebar__project:hover {
+    font-weight: bold;
+    background-color: white;
+}
+
+.sidebar__project:nth-child(1) .sidebar__dot {
+    color: #6accbc;
+}
+
+.sidebar__project:nth-child(2) .sidebar__dot {
+    color: #fad003;
+}
+
+.sidebar__project:nth-child(3) .sidebar__dot {
+    color: #ff8d85;
+}
+
+.sidebar__project:nth-child(4) .sidebar__dot {
+    color: #ff9932;
+}
+
+.sidebar__project:nth-child(5) .sidebar__dot {
+    color: #af38eb;
+}
+
+.sidebar__projects {
+    padding-left: 3px;
+}
+
+.sidebar__project {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.sidebar__dot {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.sidebar__middle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar__middle span {
+    color: #0000008a;
+    margin-right: 10px;
+}
+
+.sidebar__middle span svg.hidden-projects {
+    transform: rotate(-90deg);
+}
+
+.sidebar__middle h2 {
+    margin: 0;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.sidebar__generic li {
+    list-style-type: none;
+    color: #333;
+    display: flex;
+    cursor: pointer;
+    line-height: 1.50;
+    font-size: 15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar__generic li div:nth-child(1) {
+    display: flex;
+    padding: 10px 0 10px 10px;
+    width: 100%;
+}
+
+.sidebar__generic li div:nth-child(1) span:first-of-type {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__generic li div:nth-child(1) span:first-of-type svg {
+    width: 18px;
+    height: 18px;
+    color: #555;
+}
+
+.sidebar__generic li.active, .sidebar__generic li:hover {
+    font-weight: bold;
+    background-color: white;
+}

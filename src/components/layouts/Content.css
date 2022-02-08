@@ -1,0 +1,22 @@
+/* Main Content
+  ============================================ */
+.content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    max-width: 922px;
+    margin: auto;
+}
+
+.content >  div:first-child {
+    width: 266px;
+    webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    height: calc(100vh);
+    padding-top: 74px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-right: 1px solid #f1f1f1;
+    background-color: #fafafa;
+}
